@@ -52,7 +52,7 @@ nav {
 
 /* Styling buttons */
 .button {
-    background-color: #F50A5F;
+    background-color: rgb(229,9,20);
     padding: 7px;
 }
 
@@ -100,6 +100,50 @@ footer {
     height: 90px;
     text-align: center;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.movies
+{
+    flex-wrap: wrap;
+    margin: 4% 16%;     
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#scroll{
+    position: relative;
+    animation: arrow 2.5s infinite;
+}
+
+@keyframes arrow{
+    0%{
+        top: 15px;
+    }
+
+    100%{
+        top: 100px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap-reverse{
+    flex-wrap: wrap-reverse;
+  }
+  .container{
+    text-align: center;
+  }
+}
+
+
 
 /* Iteration 1: Styling all the flex elements with (Justify-content:space-between) & (align-items:center) */
 
